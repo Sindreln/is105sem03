@@ -16,10 +16,9 @@ func Krypter(melding []rune, alphabet []rune, chiffer int) []rune {
 }
 
 func sokIAlfabetet(symbol rune, alfabet []rune) int {
-	for i := 0; i < len(alfabet); i++ {
-		if symbol == alfabet[i] {
+	for i, alfabetSymbol := range alfabet {
+		if symbol == alfabetSymbol {
 			return i
-			break
 		}
 	}
 	return -1
